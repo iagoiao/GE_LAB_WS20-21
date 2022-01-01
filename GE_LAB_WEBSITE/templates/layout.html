@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  type = "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+        <title>
+            GESCO Software
+        </title>
+    
+        <div class = sidenav>
+
+            <img src="../static/logo.png" alt='logo' style= "width:230px;height:100px; padding-left: 5px; padding-top: 10px;">
+            <h2>
+            <form name= check_user_form action="/check_user" onsubmit="validate();" method="post">
+
+
+                <span style="display:inline-block">
+                    <label for ="Username_" style="display:block">Username</label>
+                    <input name = "Username_" placeholder="Bob"  id = 'Username_id' required >
+                </span>
+                <br> 
+                <span style="display:inline-block">
+                    <label for ="Password_" style="display:block">Password</label>
+                    <input name = "Password_" placeholder="*******"  type="password" id = 'Password_id' required >
+                </span>
+                <br> 
+               
+                <input type="submit" value="Login">
+
+                    
+            </form>
+            </h2>
+        </div>
+    </head>
+<body>
+    {% block body %} 
+    {% endblock %}
+</body>
+
+
+</html>
