@@ -43,3 +43,15 @@ def work_in_progress():
 @app.route("/project")
 def project():
     return render_template("project.html")
+
+@app.route("/loginpage")
+def loginpage():
+    return render_template("loginpage.html")
+
+@app.route("/signuppage")
+def signuppage():
+    return render_template("signuppage.html")
+
+@app.route("/returnhome")
+def returnhome():
+    return render_template("index.html")
