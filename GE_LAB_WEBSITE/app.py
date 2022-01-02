@@ -33,3 +33,13 @@ def workspace():
 @app.route("/failure")
 def failure():
     return render_template("failure.html")
+
+
+
+@app.route("/work_in_progress")
+def work_in_progress():
+    return render_template("work_in_progress.html")
+
+@app.route("/project")
+def project():
+    return render_template("project.html")

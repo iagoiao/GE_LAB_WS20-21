@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #8bb5dd;
     margin-left: 250px;
     font-size: larger;
   }
@@ -58,6 +58,7 @@ body {
   margin-top: 70px;
   text-align: center;
 }
+
 .content .number h1{
   line-height: 10px;
   text-align: center;
@@ -65,13 +66,115 @@ body {
   color: #000;
   margin-bottom: 200px;
 }
+
 .bold_text{
   font-weight: bold;
 }
+
 .content h2 {
   text-align: left;
 }
+
 .notation{
   text-align: left;
   font-size: normal;
+}
+
+.shape{
+  text-align:center;
+  background-color:rgba(3,78,136,0.7);
+  width:200px;
+  height:60px;
+  line-height:60px;
+  color:white;
+  margin:20px auto;
+  position:relative;
+}
+.shape:before{
+  content:"";
+  width:0px;
+  height:0px;
+  position:absolute;
+  right:100%;
+  top:0px;
+}
+
+.shape_yellow{
+  text-align:center;
+  background-color:rgba(214, 211, 24, 0.993);
+  width:200px;
+  height:60px;
+  line-height:60px;
+  color:white;
+  margin:20px auto;
+  position:relative;
+  margin-left: auto;
+  margin-right: 10%;
+}
+.shape_yellow:before{
+  content:"";
+  width:0px;
+  height:0px;
+  position:absolute;
+  right:100%;
+  top:0px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container {
+  width: 85%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leftpane {
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: left;
+    background-color: royalblue;
+    border-collapse: collapse;
+    border: grey;
+    border-style: groove;
+}
+
+.middlepane {
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: royalblue;
+    border-collapse: collapse;
+    border: grey;
+    border-style: groove;
+}
+
+.rightpane {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  float: right;
+  background-color: grey;
+  border-collapse: collapse;
+  border: black;
+  border-style: groove;
+}
+
+.toppane {
+  width: 100%;
+  height: 100px;
+  border-collapse: collapse;
+  background-color: royalblue;
+  border: grey;
+  border-style: groove;
+}
+body{
+  width: 90%;
+  height: 100%;
 }
